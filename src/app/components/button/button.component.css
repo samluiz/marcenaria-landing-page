@@ -1,0 +1,46 @@
+button {
+  border: 1px solid #ffffff;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.2rem;
+  width: 18rem;
+  border-radius: 72px;
+  cursor: pointer;
+  padding: 1.3rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+img {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 1rem;
+}
+
+button:hover {
+  background: rgb(248, 248, 248);
+  border: 1px solid black;
+  width: 20rem;
+}
+
+button:hover img {
+  visibility: visible;
+  display: inline-flex;
+  opacity: 1;
+}
+
+button:hover .center {
+  color: black;
+}

@@ -1,0 +1,39 @@
+.container {
+  height: 30vh;
+  width: 100%;
+  background-color: #f1ce35;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar {
+  height: 70vh;
+  left: 2rem;
+  width: 100px;
+  top: -10rem;
+  position: absolute;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+.bar2 {
+  left: 20rem;
+}
+
+.bar3 {
+  left: 40rem;
+}
+
+.bar4 {
+  left: 60rem;
+}
+
+.bar5 {
+  left: 80rem;
+}
+
+@media (max-width: 680px) {
+  .container {
+    height: 10vh;
+  }
+}

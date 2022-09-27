@@ -1,0 +1,69 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../../assets/img/image1.jpg);
+  background-attachment: fixed;
+  background-position: -10rem;
+}
+
+h1 {
+  max-width: 16.25rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 21.65rem;
+  height: 7.2656rem;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 1rem;
+}
+
+.center {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.title > h1 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3.25rem;
+  letter-spacing: 0.195em;
+}
+
+.title::after {
+  content: " ";
+  position: absolute;
+  height: 0.0625rem;
+  width: 9.375rem;
+  background-color: white;
+}
+
+.center-slogan {
+  width: 100%;
+  margin-top: 6rem;
+  display: grid;
+  place-items: center;
+}
+
+.slogan {
+  text-align: center;
+  max-width: 18.75rem;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 55px;
+}
+
+.center-button {
+  width: 100%;
+  margin-top: 6rem;
+  display: grid;
+  place-items: center;
+}
