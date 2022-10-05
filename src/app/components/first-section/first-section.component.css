@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../../../assets/img/image1.jpg);
@@ -15,7 +15,7 @@ h1 {
 }
 
 .logo {
-  width: 21.65rem;
+  max-width: 21.65rem;
   height: 7.2656rem;
   display: grid;
   grid-auto-flow: column;
@@ -57,8 +57,8 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
-  line-height: 55px;
+  font-size: 2rem;
+  line-height: 3.4375rem;
 }
 
 .center-button {
@@ -66,4 +66,26 @@ h2 {
   margin-top: 6rem;
   display: grid;
   place-items: center;
+}
+
+@media (max-width: 346px) {
+  .container {
+    background-position: -25rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .title > h1 {
+    font-size: 1.5rem;
+  }
+
+  .title::after {
+    width: 0;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
 }

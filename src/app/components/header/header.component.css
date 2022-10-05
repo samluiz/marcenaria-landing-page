@@ -76,7 +76,7 @@ ul {
   align-items: center;
 }
 
-.icon {
+/* .icon {
   height: 30px;
   width: 30px;
   left: -1px;
@@ -97,7 +97,8 @@ ul {
 .icon:visited,
 .icon:hover {
   transform: rotate(-180deg);
-}
+  left: 4.5rem;
+} */
 
 @media (max-width: 380px) {
   nav ul {
@@ -121,14 +122,14 @@ ul {
   }
 
   header {
-    left: -7rem;
+    margin-left: -7rem;
     height: 100vh;
     max-width: 30%;
     position: fixed;
     justify-content: start;
   }
 
-  .icon:hover ~ header {
-    left: 0;
+  .icon:hover header {
+    margin-left: 0;
   }
 }

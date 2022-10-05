@@ -44,3 +44,24 @@ button:hover img {
 button:hover .center {
   color: black;
 }
+
+@media (max-width: 320px) {
+  button:hover {
+    background: rgb(248, 248, 248);
+    border: 1px solid black;
+    min-width: 1rem;
+  }
+
+  button:hover img {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+
+  button {
+    font-size: 1rem;
+    width: auto;
+    max-width: 14rem;
+    padding: 1rem;
+  }
+}

@@ -15,12 +15,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   @HostListener('window:scroll', ['$event']) onScroll($event: any) {
-    console.log('scrolling');
-
     this.offsetY = this.window.scrollY;
-    console.log(this.offsetY);
 
-    if (this.offsetY > 325) {
+    if (this.offsetY > 200) {
       this.scrolled = true;
     } else {
       this.scrolled = false;
