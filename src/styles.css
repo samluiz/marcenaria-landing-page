@@ -89,6 +89,10 @@ video {
   color: white;
   scroll-behavior: smooth;
 }
+
+html {
+  background-color: #77777e;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

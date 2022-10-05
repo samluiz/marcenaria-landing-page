@@ -21,7 +21,7 @@ import { TransitionComponent } from './components/transition/transition.componen
     TransitionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [{ provide: 'Window', useValue: window }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
